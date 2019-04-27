@@ -1,7 +1,16 @@
+<% 
+=begin %>  
+<%= @posts.each do |post| %>
+  <div>
+    <%= link_to
+      post.title, "/posts/#{post.id}"
+    %>
+  </div>
+<% end %>
+=end %>
 
 
-
-#refactored with url helper
+#refactored with url helper below 
 
 <% @posts.each do |post| %>
   <div>
